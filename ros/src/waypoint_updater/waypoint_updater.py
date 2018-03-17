@@ -70,9 +70,9 @@ class WaypointUpdater(object):
             wp1 = i
         return dist
 
-
+from waypoint_updater_2 import WaypointUpdater2
 if __name__ == '__main__':
     try:
-        WaypointUpdater()
+        WaypointUpdater2()
     except rospy.ROSInterruptException:
         rospy.logerr('Could not start waypoint updater node.')
